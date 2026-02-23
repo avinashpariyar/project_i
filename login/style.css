@@ -1,0 +1,218 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body styling - blue background with centered content */
+body {
+  background: #0a668b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main page container */
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login card container - white rounded card */
+.card {
+  background: #ffffff;
+  padding: 36px 48px;
+  width: 460px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+/* Logo container */
+.logo {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo image styling - display image directly without circle */
+.logo-image {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Main heading styling */
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #fcc;
+}
+
+/* Label styling for form fields */
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+/* Input group container for fields with icons */
+.input-group {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+/* Input field styling */
+.input-group input {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+/* Input focus state */
+.input-group input:focus {
+  outline: none;
+  border-color: #0a668b;
+  background: #fff;
+}
+
+/* Icon styling inside input fields */
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Eye icon for password toggle */
+.eye-icon {
+  cursor: pointer;
+}
+
+/* Remember me and forgot password container */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Remember me checkbox container */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Checkbox styling */
+.remember-me input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Checkbox label styling */
+.checkbox-label {
+  font-size: 12px;
+  color: #444;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Forgot password link */
+.forgot-link {
+  color: #0a668b;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Sign In button styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #0a668b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background: #095676;
+}
+
+/* Button active state */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Sign up link container */
+.signup-link {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Sign up link styling */
+.signup-link a {
+  color: #0a668b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer copyright text */
+.footer {
+  font-size: 10px;
+  color: #999;
+}
+
