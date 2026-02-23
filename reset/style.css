@@ -6,7 +6,6 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Full-page background */
 body {
   background: #0a668b;
   min-height: 100vh;
@@ -15,7 +14,6 @@ body {
   justify-content: center;
 }
 
-/* Outer wrapper to center card */
 .page {
   width: 100%;
   display: flex;
@@ -23,17 +21,15 @@ body {
   align-items: center;
 }
 
-/* Main card container */
 .card {
   background: #ffffff;
-  padding: 40px 50px;
+  padding: 40px 50px 34px;
   width: 460px;
   border-radius: 18px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-/* Logo area */
 .logo {
   margin-bottom: 10px;
   display: flex;
@@ -41,53 +37,38 @@ body {
   align-items: center;
 }
 
-/* Logo image (your logo.png already contains the circle) */
 .logo-image {
   width: 56px;
   height: 56px;
   object-fit: contain;
-  display: block;
 }
 
-/* Headings */
 h1 {
   font-size: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   color: #1c1c1c;
 }
 
 .subtitle {
   font-size: 13px;
   color: #555;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
-/* Error & success messages */
-.error-message,
-.success-message {
+.error-message {
   font-size: 12px;
   border-radius: 8px;
   padding: 10px 12px;
   margin-bottom: 16px;
   text-align: left;
-}
-
-.error-message {
   background: #ffecec;
   color: #c0392b;
   border: 1px solid #ffc1c1;
 }
 
-.success-message {
-  background: #e7f9ee;
-  color: #1e8449;
-  border: 1px solid #c4efd5;
-}
-
-/* Form fields */
 .field {
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 label {
@@ -98,26 +79,12 @@ label {
   margin-bottom: 4px;
 }
 
-/* Name row */
-.row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 4px;
-}
-
-.row .field {
-  flex: 1;
-  margin-bottom: 0;
-}
-
-/* Input with icon wrapper */
 .input-group {
   position: relative;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
   width: 100%;
   padding: 11px 38px 11px 12px;
   border-radius: 8px;
@@ -138,7 +105,6 @@ input:focus {
   box-shadow: 0 0 0 1px rgba(10, 102, 139, 0.1);
 }
 
-/* Right-side icons */
 .icon {
   position: absolute;
   right: 12px;
@@ -146,47 +112,13 @@ input:focus {
   transform: translateY(-50%);
   font-size: 14px;
   color: #777;
-  cursor: default;
+  cursor: pointer;
 }
 
 .eye-icon {
   cursor: pointer;
 }
 
-/* Terms row */
-.terms {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin: 12px 0 20px;
-  font-size: 11px;
-  color: #555;
-  text-align: left;
-}
-
-.terms input[type="checkbox"] {
-  margin-top: 2px;
-  cursor: pointer;
-}
-
-.terms label {
-  font-size: 11px;
-  font-weight: 400;
-  margin: 0;
-  cursor: pointer;
-}
-
-.terms-link {
-  color: #0a668b;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.terms-link:hover {
-  text-decoration: underline;
-}
-
-/* Primary button */
 .btn {
   width: 100%;
   padding: 12px;
@@ -197,9 +129,16 @@ input:focus {
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
-  margin-bottom: 14px;
+  margin-top: 4px;
   transition: background 0.25s ease, transform 0.05s ease, box-shadow 0.15s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* Ensure link styled as button has no underline */
+.back-btn {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn:hover {
@@ -211,39 +150,11 @@ input:focus {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
-/* Bottom text */
-.login-link {
-  font-size: 12px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.login-link a {
-  color: #0a668b;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.login-link a:hover {
-  text-decoration: underline;
-}
-
-.footer {
-  font-size: 10px;
-  color: #a0a0a0;
-}
-
-/* Small screen adjustments */
 @media (max-width: 520px) {
   .card {
     width: 100%;
     margin: 12px;
-    padding: 28px 20px 30px;
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 0;
+    padding: 28px 22px 26px;
   }
 }
 

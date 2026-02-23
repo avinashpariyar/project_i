@@ -13,11 +13,10 @@
   <div class="page">
     <!-- Login card container -->
     <div class="card">
-      <!-- Logo section with circular icon -->
+      <!-- Logo section -->
       <div class="logo">
-        <div class="logo-circle">
-          <span class="car"><img src="/image/carlogo.png" alt="Vehicle Logo"></span>
-        </div>
+        <!-- Use relative path so it works under /project_i/ -->
+        <img src="../image/logo.png" alt="Vehicle Logo" class="logo-image">
       </div>
 
       <!-- Main heading -->
@@ -75,7 +74,8 @@
             <input type="checkbox" name="remember" id="remember">
             <label for="remember" class="checkbox-label">Remember me</label>
           </div>
-          <a href="#" class="forgot-link">Forgot password?</a>
+          <!-- Forgot password opens the reset password UI -->
+          <a href="../reset/index.php" class="forgot-link">Forgot password?</a>
         </div>
 
         <!-- Sign In button -->

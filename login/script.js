@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const passwordInput = document.getElementById('password');
   const togglePassword = document.getElementById('togglePassword');
   const loginForm = document.getElementById('loginForm');
+  const forgotLink = document.querySelector('.forgot-link');
+  const emailInput = document.getElementById('email');
   
   // Toggle password visibility when eye icon is clicked
   if (togglePassword && passwordInput) {
@@ -49,6 +51,36 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // If validation passes, form will submit normally
       return true;
+    });
+  }
+  
+  // Open reset password page when clicking "Forgot password?"
+  if (forgotLink) {
+    forgotLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const email = emailInput ? emailInput.value.trim() : '';
+      
+      if (!email) {
+        alert('Please enter your email first so we can reset your password.');
+        if (emailInput) {
+          emailInput.focus();
+        }
+        return;
+      }
+      
+      // Basic email pattern check before redirecting
+      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        if (emailInput) {
+          emailInput.focus();
+        }
+        return;
+      }
+      
+      // Redirect to reset password page, passing email in the URL
+      window.location.href = '../reset/index.php?email=' + encodeURIComponent(email);
     });
   }
   

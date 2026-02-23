@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Validate password length
+      // Validate password length (contents can be letters, numbers, symbols)
       if (password.length < 6) {
         event.preventDefault();
         alert('Password should be at least 6 characters.');

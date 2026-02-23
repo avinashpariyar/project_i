@@ -14,9 +14,6 @@ if ($error) {
         case 'short_password':
             $message = 'Password should be at least 6 characters.';
             break;
-        case 'invalid_password_chars':
-            $message = 'Password can contain only letters (no numbers or symbols).';
-            break;
         case 'mismatch':
             $message = 'New password and confirm password do not match.';
             break;

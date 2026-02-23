@@ -42,7 +42,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     redirectWithError('invalid_email');
 }
 
-// Validate password length (simple example)
+// Validate password length (allow letters, numbers, symbols)
 if (strlen($password) < 6) {
     redirectWithError('short_password');
 }
