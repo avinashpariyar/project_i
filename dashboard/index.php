@@ -50,7 +50,7 @@ $bays = [
             <span class="nav-caret">▾</span>
           </a>
           <div class="nav-submenu">
-            <a href="../jobcard/create.php" class="nav-subitem">Create New Job Card</a>
+            <a href="../jobcard/create.php" class="nav-subitem">Create Job Card</a>
             <a href="../jobcard/track.php" class="nav-subitem">Track Repair</a>
           </div>
         </div>
